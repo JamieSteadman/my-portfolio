@@ -1,0 +1,21 @@
+.project-container {
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 0.375rem;
+    width: 400px;
+    max-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-color: rgb(5, 48, 48);
+    border-width: 2px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.technology-badge {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    padding: 0.2rem 0.6rem;
+    justify-content: center;
+}
