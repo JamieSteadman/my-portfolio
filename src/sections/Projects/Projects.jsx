@@ -2,7 +2,7 @@ import './Projects.css';
 
 function Projects() {
     return (
-        <section className="flex flex-col gap-16">
+        <section id="projects" className="flex flex-col gap-16">
             {/*Title Banner */}
             <div className="min-w-[100vw] flex justify-center bg-black bg-opacity-50 p-8 rounded-lg border border-slate-700">
                 <h2 className="text-center text-white text-3xl font-bold"> Some of my Projects </h2>
@@ -54,7 +54,7 @@ function Projects() {
                     </div>
                     <p className="text-white text-center px-4 m-4">I programmed "Ultimate Tic Tac Toe," a strategic twist on the classic 
                         game, by building the core logic in C and developing its graphical interface with 
-                        the GTK library within Visual Studio Code. This project combined complex game 
+                        the GTK library. This project combined complex game 
                         state management with interactive button controls to create a seamless desktop 
                         gaming experience.</p>
                     <a href="google.com">

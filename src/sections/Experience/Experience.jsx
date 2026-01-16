@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <section className="flex flex-col gap-16">
+    <section id="experience"className="flex flex-col gap-16">
       {/* Section Title */}
       <div className="min-w-[100vw] flex justify-center bg-black bg-opacity-50 p-8 rounded-lg border border-slate-700">
         <h2 className="text-center text-white text-3xl font-bold">
