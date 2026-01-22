@@ -203,7 +203,7 @@ const ContactMe = () => {
                         © {new Date().getFullYear()} Jamie Steadman. All rights reserved.
                     </p>
                     <p className="text-slate-500 text-sm mt-2">
-                        Built with React, TypeScript, and Tailwind CSS.
+                        Built with React and Tailwind CSS.
                     </p>
                 </div>
             </div>
