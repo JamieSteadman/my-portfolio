@@ -3,11 +3,9 @@ import { useState } from 'react';
 const ContactMe = () => {
     const [formData, setFormData] = useState({
         name: '',
-        email: '',
         subject: '',
         message: ''
     });
-    const [status, setStatus] = useState('');
 
     const handleChange = (e) => {
         setFormData({
@@ -16,20 +14,11 @@ const ContactMe = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleMailTo = (e) => {
         e.preventDefault();
-        setStatus('sending');
-        
-        // Netlify will automatically handle the form submission
-        
-        // Reset form after submission
-        setTimeout(() => {
-            setStatus('sent');
-            setFormData({ name: '', email: '', subject: '', message: '' });
-            
-            // Reset status after 5 seconds
-            setTimeout(() => setStatus(''), 5000);
-        }, 1000);
+        const { name, subject, message } = formData;
+        const mailtoLink = `mailto:jamie.nune@gmail.com?subject=${encodeURIComponent(subject || 'Message from Portfolio')}&body=${encodeURIComponent(`Name: ${name}\n\nMessage:\n${message}`)}`;
+        window.location.href = mailtoLink;
     };
 
     return (
@@ -60,7 +49,7 @@ const ContactMe = () => {
                                 <div>
                                     <p className="text-slate-400 text-sm">Email</p>
                                     <a 
-                                        href="mailto:jamie.steadman@example.com" 
+                                        href="mailto:jamie.nune@gmail.com" 
                                         className="text-cyan-400 hover:text-cyan-300 text-lg font-medium transition-colors"
                                     >
                                         jamie.nune@gmail.com
@@ -103,7 +92,7 @@ const ContactMe = () => {
                                     {/* GitHub Logo PNG */}
                                     <div className="w-6 h-6 flex items-center justify-center">
                                         <img 
-                                            src="src\assets\images\GitHub_Invertocat_Black.png" 
+                                            src="/images/github-logo.png" 
                                             alt="GitHub" 
                                             className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 invert"
                                         />
@@ -119,7 +108,7 @@ const ContactMe = () => {
                                     {/* LinkedIn Logo PNG */}
                                     <div className="w-6 h-6 flex items-center justify-center">
                                         <img 
-                                            src="src\assets\images\LI-In-Bug.png" 
+                                            src="/images/linkedin-logo.png" 
                                             alt="LinkedIn" 
                                             className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                                         />
@@ -129,58 +118,31 @@ const ContactMe = () => {
                         </div>
                     </div>
                     
-                    {/* Contact Form - NETLIFY FORM */}
+                    {/* Contact Form - Simple mailto version */}
                     <div className="bg-black border-2 border-cyan-400 rounded-xl p-8">
                         <h3 className="text-2xl font-bold text-white mb-6">
                             Send me a message
                         </h3>
                         
                         <form 
-                            name="contact" 
-                            method="POST" 
-                            data-netlify="true"
-                            data-netlify-honeypot="bot-field"
-                            onSubmit={handleSubmit}
+                            onSubmit={handleMailTo}
                             className="space-y-6"
                         >
-                            {/* Netlify hidden fields */}
-                            <input type="hidden" name="form-name" value="contact" />
-                            <input type="hidden" name="bot-field" />
-                            
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {/* Name Field */}
-                                <div>
-                                    <label htmlFor="name" className="block text-slate-300 mb-2">
-                                        Name *
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        required
-                                        className="w-full bg-slate-900 border border-cyan-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors"
-                                        placeholder="Your name"
-                                    />
-                                </div>
-                                
-                                {/* Email Field */}
-                                <div>
-                                    <label htmlFor="email" className="block text-slate-300 mb-2">
-                                        Email *
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                        className="w-full bg-slate-900 border border-cyan-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors"
-                                        placeholder="your.email@example.com"
-                                    />
-                                </div>
+                            {/* Name Field */}
+                            <div>
+                                <label htmlFor="name" className="block text-slate-300 mb-2">
+                                    Name *
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                    className="w-full bg-slate-900 border border-cyan-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors"
+                                    placeholder="Your name"
+                                />
                             </div>
                             
                             {/* Subject Field */}
@@ -220,39 +182,14 @@ const ContactMe = () => {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                disabled={status === 'sending'}
-                                className={`w-full py-3 rounded-lg font-medium text-lg transition-all ${
-                                    status === 'sending' 
-                                        ? 'bg-cyan-700 cursor-not-allowed' 
-                                        : 'bg-cyan-600 hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-500/20'
-                                }`}
+                                className="w-full py-3 rounded-lg font-medium text-lg bg-cyan-600 hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
                             >
-                                {status === 'sending' ? (
-                                    <span className="flex items-center justify-center gap-2">
-                                        <span className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></span>
-                                        Sending...
-                                    </span>
-                                ) : status === 'sent' ? (
-                                    <span className="flex items-center justify-center gap-2">
-                                        <span className="text-xl">✓</span>
-                                        Message Sent!
-                                    </span>
-                                ) : (
-                                    'Send Message'
-                                )}
+                                Send via Email
                             </button>
-                            
-                            {/* Status Message */}
-                            {status === 'sent' && (
-                                <div className="p-4 bg-cyan-900/30 border border-cyan-700 rounded-lg text-cyan-300 text-center animate-pulse">
-                                    <p className="font-medium">Thank you! Your message has been sent.</p>
-                                    <p className="text-sm mt-1">I'll get back to you within 24-48 hours.</p>
-                                </div>
-                            )}
                             
                             {/* Form Note */}
                             <p className="text-slate-400 text-sm text-center">
-                                * Required fields. Powered by Netlify Forms.
+                                * Required fields. Clicking "Send via Email" will open your email client.
                             </p>
                         </form>
                     </div>
@@ -264,7 +201,7 @@ const ContactMe = () => {
                         © {new Date().getFullYear()} Jamie Steadman. All rights reserved.
                     </p>
                     <p className="text-slate-500 text-sm mt-2">
-                        Built with React, TypeScript, and Tailwind CSS. Deployed on Netlify.
+                        Built with React, TypeScript, and Tailwind CSS.
                     </p>
                 </div>
             </div>
