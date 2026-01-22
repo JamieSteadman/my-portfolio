@@ -278,7 +278,7 @@ const Projects = () => {
                         
                         {/* Project Image */}
                         <a 
-                            href="https://github.com/yourusername/portfolio-website/README.md" 
+                            href="https://github.com/JamieSteadman/my-portfolio" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="w-full h-48 rounded-lg mb-6 flex items-center justify-center overflow-hidden group cursor-pointer hover:opacity-90 transition-opacity duration-300 relative"
@@ -290,7 +290,7 @@ const Projects = () => {
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
                             <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/70 px-3 py-1 rounded-lg">
-                                Click to view project details
+                                Click to view project source code
                             </p>
                             {/* External link icon overlay */}
                             <div className="absolute top-2 right-2 bg-white/20 rounded-full p-1.5">

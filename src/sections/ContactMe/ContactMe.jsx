@@ -64,7 +64,7 @@ const ContactMe = () => {
                                         href="mailto:jamie.steadman@example.com" 
                                         className="text-cyan-400 hover:text-cyan-300 text-lg font-medium transition-colors"
                                     >
-                                        jamie.steadman@example.com
+                                        steadj3@mcmaster.ca
                                     </a>
                                 </div>
                             </div>
@@ -95,31 +95,36 @@ const ContactMe = () => {
                             <h4 className="text-xl font-bold text-cyan-300 mb-4">Find me online</h4>
                             <div className="flex gap-4">
                                 <a 
-                                    href="https://github.com" 
+                                    href="https://github.com/JamieSteadman" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="w-12 h-12 bg-slate-900 border border-cyan-800 rounded-full flex items-center justify-center hover:bg-slate-800 transition-colors group"
+                                    className="w-12 h-12 bg-slate-900 border border-cyan-800 rounded-full flex items-center justify-center hover:bg-slate-800 transition-colors group overflow-hidden"
                                     title="GitHub"
                                 >
-                                    <span className="text-white text-xl group-hover:scale-110 transition-transform">🐙</span>
+                                    {/* GitHub Logo PNG */}
+                                    <div className="w-6 h-6 flex items-center justify-center">
+                                        <img 
+                                            src="src\assets\images\GitHub_Invertocat_Black.png" 
+                                            alt="GitHub" 
+                                            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 invert"
+                                        />
+                                    </div>
                                 </a>
                                 <a 
-                                    href="https://linkedin.com" 
+                                    href="https://www.linkedin.com/in/jamie-steadman-b55b19307/" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="w-12 h-12 bg-slate-900 border border-cyan-800 rounded-full flex items-center justify-center hover:bg-slate-800 transition-colors group"
+                                    className="w-12 h-12 bg-slate-900 border border-cyan-800 rounded-full flex items-center justify-center hover:bg-slate-800 transition-colors group overflow-hidden"
                                     title="LinkedIn"
                                 >
-                                    <span className="text-white text-xl group-hover:scale-110 transition-transform">💼</span>
-                                </a>
-                                <a 
-                                    href="https://twitter.com" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="w-12 h-12 bg-slate-900 border border-cyan-800 rounded-full flex items-center justify-center hover:bg-slate-800 transition-colors group"
-                                    title="Twitter"
-                                >
-                                    <span className="text-white text-xl group-hover:scale-110 transition-transform">🐦</span>
+                                    {/* LinkedIn Logo PNG */}
+                                    <div className="w-6 h-6 flex items-center justify-center">
+                                        <img 
+                                            src="src\assets\images\LI-In-Bug.png" 
+                                            alt="LinkedIn" 
+                                            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                                        />
+                                    </div>
                                 </a>
                             </div>
                         </div>
