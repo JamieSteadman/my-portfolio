@@ -21,7 +21,6 @@ const ContactMe = () => {
         setStatus('sending');
         
         // Netlify will automatically handle the form submission
-        // because we're using data-netlify="true" and a form with name="contact"
         
         // Reset form after submission
         setTimeout(() => {
@@ -64,7 +63,7 @@ const ContactMe = () => {
                                         href="mailto:jamie.steadman@example.com" 
                                         className="text-cyan-400 hover:text-cyan-300 text-lg font-medium transition-colors"
                                     >
-                                        steadj3@mcmaster.ca
+                                        jamie.nune@gmail.com
                                     </a>
                                 </div>
                             </div>
