@@ -12,7 +12,7 @@ const AboutMe = () => {
                         <div className="w-96 h-96 md:w-[28rem] md:h-[28rem] rounded-full border-4 border-white overflow-hidden">
                             {/* Placeholder headshot  */}
                             <img 
-                                src="https://via.placeholder.com/400x400/1e293b/ffffff?text=Headshot" 
+                                src="src\assets\images\Polar_Bear_-_Alaska_(cropped).jpg" 
                                 alt="Jamie Steadman headshot" 
                                 className="w-full h-full object-cover"
                             />

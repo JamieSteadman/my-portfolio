@@ -1,7 +1,8 @@
 const Skills = () => {
     // Skill data
     const programmingLanguages = [
-        "Java", "Python", "JavaScript", "TypeScript", "C", "HTML/CSS", "SQL"
+        "Java", "Python", "JavaScript", "TypeScript", "C", "HTML/CSS", "SQL", "Spring Boot",
+        "React", "FastAPI", "Node.js"
     ];
     
     const generalSkills = [
@@ -15,7 +16,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="text-white px-6 py-16">
+        <section id="skills" className="text-white px-6 py-16 mx-16">
             {/* Title - top left aligned */}
             <h2 className="text-5xl md:text-6xl font-bold mb-16 ml-0 md:ml-0 text-center">Skills</h2>
             
@@ -27,9 +28,9 @@ const Skills = () => {
                     {/* Programming Languages partition */}
                     <div className="flex-1 text-center p-4 lg:p-6 relative">
                         <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-cyan-300 mb-2">
-                            Programming Languages
+                            Languages & Frameworks
                         </h3>
-                        <p className="text-slate-300 text-sm md:text-base">Core languages I work with</p>
+                        <p className="text-slate-300 text-sm md:text-base">Core languages & frameworks I work with</p>
                         
                         {/* Vertical divider line (right side) */}
                         <div className="absolute top-1/4 bottom-1/4 right-0 w-px bg-cyan-500"></div>
@@ -62,7 +63,7 @@ const Skills = () => {
                     <div className="lg:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-6 bg-cyan-500"></div>
                 </div>
 
-                <div className>
+                <div className="">
                     
                 </div>
                 {/* Leaf Nodes Container */}

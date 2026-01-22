@@ -14,6 +14,15 @@ const Navbar = () => {
 
           <li>
             <a
+              href="#skills"
+              className="hover:text-white border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 text-xl"
+            >
+              SKILLS
+            </a>
+          </li>
+
+          <li>
+            <a
               href="#experience"
               className="hover:text-white border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 text-xl"
             >

@@ -5,11 +5,11 @@ import Experience from "./sections/Experience/Experience"
 import Education from "./sections/Education/Education"
 import Navbar from "./components/navbar"
 import Skills from "./sections/skills/Skills"
+import ContactMe from "./sections/ContactMe/ContactMe"
 
 function App() {
   return (
     <div className="bg-slate-950 min-h-screen flex flex-col gap-20">
-      
       <Navbar />
       <Hero />
       <AboutMe />
@@ -17,6 +17,7 @@ function App() {
       <Education />
       <Experience />
       <Projects />
+      <ContactMe />
     </div>
   )
 }

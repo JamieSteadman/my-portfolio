@@ -65,7 +65,7 @@ const Hero = () => {
         {/* Social links */}
         <div className="mt-8 text-slate-500 text-sm bg-white bg-opacity-10 p-4 rounded-lg">
           <a 
-            href="https://github.com" 
+            href="https://github.com/JamieSteadman" 
             target="_blank" 
             rel="noopener noreferrer"
             className="mr-8 hover:text-slate-300 transition-colors duration-300 text-lg"
@@ -73,7 +73,7 @@ const Hero = () => {
             GitHub
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/jamie-steadman-b55b19307/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-slate-300 transition-colors duration-300 text-lg"
