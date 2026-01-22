@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import githubLogo from "../../assets/images/GitHub_Invertocat_Black.png"
+import linkedInLogo from "../../assets/images/LI-In-Bug.png"
 
 const ContactMe = () => {
     const [formData, setFormData] = useState({
@@ -92,7 +94,7 @@ const ContactMe = () => {
                                     {/* GitHub Logo PNG */}
                                     <div className="w-6 h-6 flex items-center justify-center">
                                         <img 
-                                            src="/images/github-logo.png" 
+                                            src={githubLogo} 
                                             alt="GitHub" 
                                             className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 invert"
                                         />
@@ -108,7 +110,7 @@ const ContactMe = () => {
                                     {/* LinkedIn Logo PNG */}
                                     <div className="w-6 h-6 flex items-center justify-center">
                                         <img 
-                                            src="/images/linkedin-logo.png" 
+                                            src={linkedInLogo}
                                             alt="LinkedIn" 
                                             className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                                         />

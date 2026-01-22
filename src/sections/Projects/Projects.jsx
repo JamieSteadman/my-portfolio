@@ -1,3 +1,9 @@
+import minesweeperImg from "../../assets/images/minesweeper.PNG"
+import destinyImg from "../../assets/images/destiny-project.PNG"
+import ultimateImg from "../../assets/images/ultimate-ttt.PNG"
+import portfolioImg from "../../assets/images/portfolio-image.PNG"
+import arenaImg from "../../assets/images/ultimate-duelists.PNG"
+
 const Projects = () => {
     return (
         <section id="projects" className="text-white px-6 py-16">
@@ -23,7 +29,7 @@ const Projects = () => {
                         >
                             {/* Image source */}
                             <img 
-                                src="src\assets\images\destiny-project.PNG" 
+                                src={destinyImg} 
                                 alt="Destiny 2 Player Lookup Dashboard"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
@@ -89,7 +95,7 @@ const Projects = () => {
                         >
                             {/* Image source */}
                             <img 
-                                src="src\assets\images\ultimate-duelists.PNG" 
+                                src={arenaImg}
                                 alt="Ultimate Duelists Game"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
@@ -154,7 +160,7 @@ const Projects = () => {
                         >
                             {/* Image source */}
                             <img 
-                                src="src\assets\images\minesweeper.PNG" 
+                                src={minesweeperImg}
                                 alt="Ultimate Tic Tac Toe Game"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
@@ -220,7 +226,7 @@ const Projects = () => {
                         >
                             {/* Image source */}
                             <img 
-                                src="src\assets\images\ultimate-ttt.PNG" 
+                                src={ultimateImg}
                                 alt="Ultimate Tic Tac Toe Game"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
@@ -285,7 +291,7 @@ const Projects = () => {
                         >
                             {/* Image source */}
                             <img 
-                                src="src\assets\images\portfolio-image.PNG" 
+                                src={portfolioImg}
                                 alt="Portfolio Website"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
