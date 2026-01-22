@@ -4,7 +4,7 @@ import Projects from "./sections/Projects/Projects"
 import Experience from "./sections/Experience/Experience"
 import Education from "./sections/Education/Education"
 import Navbar from "./components/navbar"
-import Skills from "./sections/skills/Skills"
+import Skills from "./sections/Skills/Skills"
 import ContactMe from "./sections/ContactMe/ContactMe"
 
 function App() {
