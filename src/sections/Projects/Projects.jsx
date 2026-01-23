@@ -320,7 +320,7 @@ const Projects = () => {
                         
                         {/* Project Description */}
                         <p className="text-slate-300 leading-relaxed flex-grow mb-6">
-                            A modern, responsive portfolio website built with <span className="font-semibold text-cyan-300">React</span> and <span className="font-semibold text-cyan-300">TypeScript</span>, 
+                            A modern, responsive portfolio website built with <span className="font-semibold text-cyan-300">React</span> and <span className="font-semibold text-cyan-300">Tailwind CSS</span>, 
                             featuring a dark theme with cyan accents. The site showcases my projects, skills, 
                             and experience with smooth animations and interactive components. Built with 
                             <span className="font-semibold text-cyan-300"> Tailwind CSS</span> for rapid development and optimal performance.
