@@ -1,4 +1,4 @@
-import tempHeadshot from "../../assets/images/Polar_Bear_-_Alaska_(cropped).jpg"
+import headshot from "src\assets\images\profile-image.jpg"
 
 const AboutMe = () => {
     return (
@@ -14,7 +14,7 @@ const AboutMe = () => {
                         <div className="w-96 h-96 md:w-[28rem] md:h-[28rem] rounded-full border-4 border-white overflow-hidden">
                             {/* Placeholder headshot  */}
                             <img 
-                                src={tempHeadshot} 
+                                src={headshot} 
                                 alt="Jamie Steadman headshot" 
                                 className="w-full h-full object-cover"
                             />
