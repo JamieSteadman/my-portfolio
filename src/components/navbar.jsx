@@ -23,6 +23,15 @@ const Navbar = () => {
 
           <li>
             <a
+              href="#education"
+              className="hover:text-white border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 text-xl"
+            >
+              EDUCATION
+            </a>
+          </li>
+
+          <li>
+            <a
               href="#experience"
               className="hover:text-white border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 text-xl"
             >
@@ -41,12 +50,10 @@ const Navbar = () => {
 
           <li>
             <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="hover:text-white border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 text-xl"
             >
-              RESUME
+              CONTACT
             </a>
           </li>
         </ul>
